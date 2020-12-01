@@ -1,0 +1,12 @@
+<h1>Successful authentication!!!</h1>
+
+<div *ngIf="user">
+   
+    <h1>name: {{user.name}}</h1>
+    <h1>email: {{user.email}}</h1>
+    <h1>id: {{user._id}}</h1>
+    <button (click)="logout()">Logout</button>
+
+</div>
+
+

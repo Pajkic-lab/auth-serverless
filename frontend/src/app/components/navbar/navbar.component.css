@@ -1,0 +1,28 @@
+.navbar {
+    background-color: gray;
+    height: 80px;
+    border-bottom: 4px solid rgb(206, 39, 39);
+}
+
+.navbar li{
+    /*background-color: black;*/
+    font-family: 'Oswald', sans-serif, 'Sansita Swashed', cursive;
+    font-size: 30px;
+    display: inline-block;
+    color: white;
+    margin: 0 20px;
+    position: relative;
+    top: 15px;
+    left: 500px;
+}
+
+.navbar li:hover{
+    color: rgb(206, 39, 39);
+}
+
+.navbar img{
+    display: inline-block;
+    float: left;
+    margin-top: 10px;
+    margin-left: 20px;
+}

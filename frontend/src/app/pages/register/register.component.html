@@ -1,0 +1,23 @@
+<app-navbar></app-navbar>
+<div class="login-container">
+
+    <a href="https://www.serverless.com/" target="_blank"><img style="width: 200px; height: 200px;" src="https://miro.medium.com/max/700/1*FE3KE3VOqec44eXbmWFBzw.png" /> </a>
+    <a href="https://aws.amazon.com/lambda/?nc2=h_ql_prod_fs_lbd" target="_blank"><img style="width: 200px; height: 200px;" src="https://42vnof42im1n3ecs8l2w7ez1-wpengine.netdna-ssl.com/wp-content/uploads/2020/07/AWS-Lambda@4x-190x190.png" /> </a>
+    <a href="https://www.mongodb.com/cloud/atlas" target="_blank"><img style="width: 200px; height: 200px;" src="https://g.foolcdn.com/art/companylogos/square/mdb.png" /> </a>
+
+    <p>Backend is based upon Lambda Functions <br/>
+        do to that initial kik will be cold 
+    </p>
+
+<flash-messages></flash-messages>
+
+<h2>Register</h2> <br/>
+<form #registerForm="ngForm" (ngSubmit)="registerUser(registerForm)">
+    <input ngModel placeholder="name" name="name" required /> <br/>
+    <input ngModel placeholder="email" name="email" type="email" required /> <br/>
+    <input ngModel placeholder="password" name="password" required /> <br/>
+    <input ngModel placeholder="confirm password" name="confirmPassword" required /> <br/>
+    <button>Register</button>
+</form>
+
+</div>

@@ -1,0 +1,52 @@
+.login-container{
+    width: 60vw;
+    margin: 50px auto;
+    font-family: 'Oswald', sans-serif;
+}
+
+.login-container img{
+    display: inline-block;
+    margin: 25px;
+}
+
+.login-container p{
+    font-size: 30px;
+    margin: 30px;
+}
+
+input {
+    border: none;
+    -webkit-appearance: none;
+    -ms-appearance: none;
+    -moz-appearance: none;
+    appearance: none;
+    background: #f2f2f2;
+    padding: 12px;
+    border-radius: 3px;
+    width: 250px;
+    outline: none;
+    margin: 6px;
+}
+
+input:focus::placeholder{
+    color: transparent;
+}
+
+input::placeholder{
+    color: #222;
+    transition: color 0.3s ease;
+}
+
+button {
+    width: 120px;
+    height: 30px;
+    margin-top: 30px;
+    border: none;
+    border-radius: 7%;
+}
+
+button:hover{
+    cursor: pointer;
+    border: 3px solid rgb(206, 39, 39);
+    color: rgb(206, 39, 39);
+}

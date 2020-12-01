@@ -1,0 +1,45 @@
+
+
+service: backend1
+
+frameworkVersion: '1'
+
+plugins:
+  - serverless-pseudo-parameters
+  - serverless-webpack
+  - serverless-offline
+
+package:
+  individually: true
+
+provider:
+  name: aws
+  runtime: nodejs12.x
+  stage: ${opt:stage, 'dev'}
+
+
+functions:
+  hello:
+    handler: handler.hello
+  registerUser:
+    handler: functions/registerUser.handler
+    events:
+      - http: 
+          path: /registeruser
+          cors: true
+          method: post
+  loginUser:
+    handler: functions/loginUser.handler
+    events:
+      - http: 
+          path: /loginuser
+          cors: true
+          method: post
+  getUser:
+    handler: functions/getUser.handler
+    events:
+      - http: 
+          path: /getuser
+          cors: true
+          method: get
+
